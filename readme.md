@@ -104,5 +104,3 @@
 - KODOLI: Korean Dataset for Offensive Language Identification  
 
 ---
-
-이 README는 프로젝트의 핵심 내용을 강조하며, 연구 배경, 모델 선택, 실험 결과, 기대 효과를 체계적으로 정리하였습니다. 필요에 따라 섹션을 추가하거나 수정할 수 있습니다. 🚀
