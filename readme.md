@@ -56,40 +56,7 @@
 - **Task-specific Layers:** 작업별 특화 레이어  
 
 #### **Classifier 성능 비교:**  
-- **KoBERT Unified Classifier:** ALD (91.47%), SA (75.91%), OLI (81.38%)  
-- **KoELECTRA Unified Classifier:** ALD (88.86%), SA (74.24%), OLI (80.49%)  
-
-#### **Freezing Strategy:**  
-- 상위 레이어만 학습 시, 성능 저하 관찰  
-- 전체 재학습 시 더 나은 성능 확인  
-
----
-
-### 📊 **하이퍼파라미터 튜닝**
-- **Optimizer:** AdamW  
-- **Scheduler:** Cosine  
-- **Epochs:** 5, 10  
-- **Tokenizer:** Mecab_ko  
-- **Classifier Activation Function:** ReLU, Sigmoid, Tanh  
-
----
-
-### 🚀 **서비스 방향 및 사회적 영향**
-- **커뮤니티 플랫폼 댓글 필터링 (예: 고파스, 에브리타임)**  
-- **저연령층을 위한 부적절한 언어 필터링**  
-- **LLM 출력 검증 및 정렬 (Model Alignment)**  
-
-#### **기대 효과:**  
-- 온라인 욕설 및 혐오 표현 노출 감소  
-- 온라인 소통에서의 정신적 스트레스 감소  
-- 저연령층의 올바른 언어 사용 능력 향상  
-
----
-
-### 🛠️ **향후 개선 방향**
-- 하이퍼파라미터 튜닝 최적화  
-- 충분한 학습 시간 확보  
-- Optuna와 같은 자동화 도구 활용  
+- **KoBERT Unified Classifier:** ALD (91.47%), SA (75.91%), OLI안
 
 ---
 
