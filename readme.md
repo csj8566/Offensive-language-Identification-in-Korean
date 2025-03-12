@@ -56,8 +56,21 @@
 - **Shared Layers:** 모든 작업에 공통 적용  
 - **Task-specific Layers:** 작업별 특화 레이어  
 
-### **Classifier 성능 비교:**  
-- **KoBERT Unified Classifier:** ALD (91.47%), SA (75.91%), OLI안
+## 1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣**Classifier modeling**
+
+### KoBERT – Classifier Modeling
+
+| Metric | ALD | SA | OLI |
+| --- | --- | --- | --- |
+| Unified Classifier | **91.47%** | 75.91% | **81.38%** |
+| Specific Classifier for each Task | 90.62% | **79.68%** | 78.12% |
+
+### KoELECTRA – Classifier Modeling
+
+| Metric | ALD | SA | OLI |
+| --- | --- | --- | --- |
+| Unified Classifier | **88.86%** | **74.24%** | **80.49%** |
+| Specific Classifier for each Task | 65.##% | 70.##% | 78.##% |
 
 ---
 
