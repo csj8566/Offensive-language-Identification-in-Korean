@@ -1,6 +1,6 @@
 # 📝 **Offensive Language Identification in Korean**
 
-![설명](images/Offensive-language-detection_modeling.png)
+
 
 ## ✅ **프로젝트 개요**
 - **프로젝트명:** Offensive Language Identification in Korean  
@@ -10,7 +10,8 @@
    - **욕설이 있지만 공격적 의도가 아닌 문장, 욕설이 없지만 긍정적인 문장 등을 구분**  
 - **예시:**  
    - "기다려라 찾아간다 ㅋㅋ 평생 누워있게 해줄게" → 직접 욕설 없음, 그러나 공격적 의도 포함  
-
+-- ✅ **모델링 전략**
+![모델링전략략](images/Offensive-language-detection_modeling.png)
 ---
 
 ## ✅ **관련 연구 동향**
