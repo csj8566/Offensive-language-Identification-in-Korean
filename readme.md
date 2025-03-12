@@ -59,24 +59,65 @@
 ### **Multi-task Learning (MTL) 적용:**  
 - **Shared Layers:** 모든 작업에 공통 적용  
 - **Task-specific Layers:** 작업별 특화 레이어  
+   ## 1️⃣ **Classifier modeling**
 
-## 1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣**Classifier modeling**
+   ### KoBERT – Classifier Modeling
 
-### KoBERT – Classifier Modeling
+   | Metric | ALD | SA | OLI |
+   | --- | --- | --- | --- |
+   | Unified Classifier | **91.47%** | 75.91% | **81.38%** |
+   | Specific Classifier for each Task | 90.62% | **79.68%** | 78.12% |
 
-| Metric | ALD | SA | OLI |
-| --- | --- | --- | --- |
-| Unified Classifier | **91.47%** | 75.91% | **81.38%** |
-| Specific Classifier for each Task | 90.62% | **79.68%** | 78.12% |
+   ### KoELECTRA – Classifier Modeling
 
-### KoELECTRA – Classifier Modeling
+   | Metric | ALD | SA | OLI |
+   | --- | --- | --- | --- |
+   | Unified Classifier | **88.86%** | **74.24%** | **80.49%** |
+   | Specific Classifier for each Task | 65.##% | 70.##% | 78.##% |
 
-| Metric | ALD | SA | OLI |
-| --- | --- | --- | --- |
-| Unified Classifier | **88.86%** | **74.24%** | **80.49%** |
-| Specific Classifier for each Task | 65.##% | 70.##% | 78.##% |
+   ---
 
----
+   ## 2️⃣3️⃣4️⃣5️⃣6️⃣ **Freezing strategy**
+
+   ### KoBERT – Freezing (Unified)
+
+   | Model | ALD | SA | OLI |
+   | --- | --- | --- | --- |
+   | **BERT no freezing** | **91.47%** | **75.91%** | **81.38%** |
+   | BERT 12th, 11th, 10th layer train | 88.99% | 72.24% | 78.61% |
+   | BERT 12th, 11th layer train | 87.95% | 70.58% | 77.28% |
+   | BERT 12th layer train | 84.83% | 67.53% | 74.71% |
+   | BERT no train | 67.12% | 40.59% | 64.39% |
+
+   ### KoBERT – Freezing (Specific)
+
+   | Model | ALD | SA | OLI |
+   | --- | --- | --- | --- |
+   | BERT no freezing | 64.06% | 35.93% | 81.38% |
+   | BERT 12th, 11th, 10th layer train | 89.06% | 65.62% | 70.31% |
+   | **BERT 12th, 11th layer train** | **90.62%** | **79.68%** | **78.12%** |
+   | BERT 12th layer train | 81.25% | 70.31% | 70.31% |
+   | BERT no train | 87.50% | 60.93% | 81.25% |
+
+   ### KoELECTRA – Freezing (Unified)
+
+   | Model | ALD | SA | OLI |
+   | --- | --- | --- | --- |
+   | ELECTRA no freezing | 65.##% | 35.##% | 65.##% |
+   | **ELECTRA 10th, 11th layer train** | **88.86%** | **74.24%** | **80.49%** |
+   | ELECTRA 11th layer train | 88.58% | 73.58% | 79.09% |
+   | ELECTRA no train | 81.##% | 57.##% | 71.##% |
+
+   ### KoELECTRA – Freezing (Specific)
+
+   | Model | ALD | SA | OLI |
+   | --- | --- | --- | --- |
+   | ELECTRA no freezing | 65.##% | 35.##% | 65.##% |
+   | ELECTRA 10th, 11th layer train | 65.##% | 70.##% | 78.##% |
+   | **ELECTRA 11th layer train** | **65.##%** | **71.##%** | **78.##%** |
+   | ELECTRA no train | 65.##% | 65.##% | 74.##% |
+
+   **KoBERT(Unified)와 KoELECTRA의 동결전략 차이**
 
 ## ✅ **참고 문헌**
 - KOAS: Korean Text Offensiveness Analysis System  
