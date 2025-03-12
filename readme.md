@@ -1,6 +1,6 @@
-## 📝 **Offensive Language Identification in Korean**
+# 📝 **Offensive Language Identification in Korean**
 
-### ✅ **프로젝트 개요**
+## ✅ **프로젝트 개요**
 - **프로젝트명:** Offensive Language Identification in Korean  
 - **목적:**  
    - 욕설 포함 여부뿐만 아니라, 욕설이 없어도 공격적 의도를 내포한 문장 식별  
@@ -11,8 +11,8 @@
 
 ---
 
-### ✅ **관련 연구 동향**
-#### **1. KOAS (Korean Text Offensiveness Analysis System)**  
+## ✅ **관련 연구 동향**
+### **1. KOAS (Korean Text Offensiveness Analysis System)**  
 - **주요 작업:**  
    - **욕설 감지 (Abusive Language Detection)**: 욕설 포함 여부 판단  
    - **감정 분석 (Sentiment Analysis)**: 긍정, 중립, 부정 분류  
@@ -23,7 +23,7 @@
    - 유튜브, 네이버 영화 리뷰, DC인사이드  
    - 약 4만 5천 개 문장 학습  
 
-#### **2. KODOLI (Korean Dataset for Offensive Language Identification)**  
+### **2. KODOLI (Korean Dataset for Offensive Language Identification)**  
 - **데이터셋 구성:**  
    - 총 38,525개 댓글  
    - 주요 소스: DC인사이드, 네이버 뉴스 댓글, 기타 쇼핑 및 게임 플랫폼  
@@ -36,32 +36,32 @@
 
 ---
 
-### ✅ **모델 선정 및 설명**
-#### **선정 모델:**  
+## ✅ **모델 선정 및 설명**
+### **선정 모델:**  
 - **KoBERT:** 한국어 특화된 BERT 모델  
 - **KoELECTRA:** 한국어 특화된 ELECTRA 모델  
 
-#### **모델 특징:**  
+### **모델 특징:**  
 - **KoBERT:** Transformer 기반 양방향 문맥 이해  
 - **KoELECTRA:** Replaced Token Detection 기법 활용  
 
-#### **토크나이저 비교:**  
+### **토크나이저 비교:**  
 - **Mecab_ko:** 형태소 분석 최적화  
 - **SentencePiece:** 일반적인 토크나이저  
 
 ---
 
-### ✅ **실험 및 결과**
-#### **Multi-task Learning (MTL) 적용:**  
+## ✅ **실험 및 결과**
+### **Multi-task Learning (MTL) 적용:**  
 - **Shared Layers:** 모든 작업에 공통 적용  
 - **Task-specific Layers:** 작업별 특화 레이어  
 
-#### **Classifier 성능 비교:**  
+### **Classifier 성능 비교:**  
 - **KoBERT Unified Classifier:** ALD (91.47%), SA (75.91%), OLI안
 
 ---
 
-### ✅ **참고 문헌**
+## ✅ **참고 문헌**
 - KOAS: Korean Text Offensiveness Analysis System  
 - KODOLI: Korean Dataset for Offensive Language Identification  
 
