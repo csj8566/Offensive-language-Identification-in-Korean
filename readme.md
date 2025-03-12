@@ -1,5 +1,7 @@
 # 📝 **Offensive Language Identification in Korean**
 
+![설명](images/Offensive-language-detection_modeling.png)
+
 ## ✅ **프로젝트 개요**
 - **프로젝트명:** Offensive Language Identification in Korean  
 - **목적:**  
