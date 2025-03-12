@@ -1,6 +1,6 @@
 ## 📝 **Offensive Language Identification in Korean**
 
-### 📚 **프로젝트 개요**
+### ✅ **프로젝트 개요**
 - **프로젝트명:** Offensive Language Identification in Korean  
 - **목적:**  
    - 욕설 포함 여부뿐만 아니라, 욕설이 없어도 공격적 의도를 내포한 문장 식별  
@@ -10,7 +10,7 @@
 
 ---
 
-### 🔍 **관련 연구 동향**
+### ✅ **관련 연구 동향**
 #### **1. KOAS (Korean Text Offensiveness Analysis System)**  
 - **주요 작업:**  
    - **욕설 감지 (Abusive Language Detection)**: 욕설 포함 여부 판단  
@@ -35,7 +35,7 @@
 
 ---
 
-### 💻 **모델 선정 및 설명**
+### ✅ **모델 선정 및 설명**
 #### **선정 모델:**  
 - **KoBERT:** 한국어 특화된 BERT 모델  
 - **KoELECTRA:** 한국어 특화된 ELECTRA 모델  
@@ -50,7 +50,7 @@
 
 ---
 
-### ⚙️ **실험 및 결과**
+### ✅ **실험 및 결과**
 #### **Multi-task Learning (MTL) 적용:**  
 - **Shared Layers:** 모든 작업에 공통 적용  
 - **Task-specific Layers:** 작업별 특화 레이어  
@@ -60,13 +60,7 @@
 
 ---
 
-### 📑 **기여자**
-- **이름:** 고수현  
-- **학번:** 2018131425  
-
----
-
-### 📥 **참고 문헌**
+### ✅ **참고 문헌**
 - KOAS: Korean Text Offensiveness Analysis System  
 - KODOLI: Korean Dataset for Offensive Language Identification  
 
